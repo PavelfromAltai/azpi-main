@@ -1,0 +1,55 @@
+doctype html
+html(lang='ru')
+  head
+    title АЗПИ-2
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, user-scalable=yes')
+    link(href='css/style.css', rel='stylesheet')
+  body
+    header.header
+      div.header__registration
+        div.container
+          span.header__registration__enter Вход
+          a.header__registration__price-list(href="#") Прайс-лист
+      div.header__main    
+        div.container
+          div.info
+            div.info__logo
+              img(src="img/logo.png")
+            div.info__delivery
+              span Отправляем по всей россии<br> любой транспортной<br> компанией
+              img(src="img/delivery-car.png")
+            div.contacts.info__contacts
+              span.contacts__phone +7(3852)77-94-83
+              a.contacts__mail(href="mailto:azpi22@bk.ru") azpi@bk.ru
+            div.info__search
+              input.info__search__text(type="text",placeholder="Поиск по артикулу")
+              input.info__search__submit(type="submit",value="от")
+            div.info__basket
+              img.info__basket__img(src="img/cart.png")
+              span.info__basket__text В корзине 50 товаров
+          nav.menu
+            ul.menu__list
+              li.menu__item
+                a.menu__link(href="#") О компании        
+              li.menu__item
+                a.menu__link(href="#") Новости
+              li.menu__item
+                a.menu__link(href="#") Каталог
+              li.menu__item
+                a.menu__link(href="#") Доставка и оплата  
+              li.menu__item
+                  a.menu__link(href="#") Ценовая политика
+              li.menu__item
+                  a.menu__link(href="#") Гарантия    
+              li.menu__item
+                  a.menu__link(href="#") Партнёры      
+              li.menu__item
+                  a.menu__link(href="#") Контакты
+          div.photo
+            div.photo__text-block
+              span.photo__text Прямые поставки <br> форсуноки распылителей <br> напрямую с завода
+              a(href="#").photo__more-detailed Подробнее
+            img(src="img/banner.png")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="js/script.js")              
