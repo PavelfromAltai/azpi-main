@@ -9,24 +9,25 @@ html(lang='ru')
     header.header
       div.header__registration
         div.container
-          span.header__registration__enter Вход
+          a.header__registration__enter(href="#") Вход
           a.header__registration__price-list(href="#") Прайс-лист
       div.header__main    
         div.container
           div.info
             div.info__logo
-              img(src="img/logo.png")
+              img(src="img/logo.svg")
             div.info__delivery
               span Отправляем по всей россии<br> любой транспортной<br> компанией
-              img(src="img/delivery-car.png")
+              img(src="img/delivery-car.svg")
             div.contacts.info__contacts
-              span.contacts__phone +7(3852)77-94-83
+              a.contacts__phone(href="tel:73852779483") +7(3852)77-94-83
               a.contacts__mail(href="mailto:azpi22@bk.ru") azpi@bk.ru
             div.info__search
-              input.info__search__text(type="text",placeholder="Поиск по артикулу")
-              input.info__search__submit(type="submit",value="от")
+              form.info__search__form
+                input.info__search__text(type="text",placeholder="Поиск по артикулу")
+                input.info__search__submit(type="submit",value="")
             div.info__basket
-              img.info__basket__img(src="img/cart.png")
+              img.info__basket__img(src="img/cart.svg")
               span.info__basket__text В корзине 50 товаров
           nav.menu
             ul.menu__list
@@ -51,5 +52,36 @@ html(lang='ru')
               span.photo__text Прямые поставки <br> форсуноки распылителей <br> напрямую с завода
               a(href="#").photo__more-detailed Подробнее
             img(src="img/banner.png")
+    footer.footer
+      div.container.footer__inner
+        div.footer__logo.info__logo
+          img(src="img/logo.svg")
+        ul.footer__menu__list
+          li.footer__menu__item 
+            a.footer__menu__link(href="#") О компании
+          li.footer__menu__item 
+            a.footer__menu__link(href="#") Каталог
+          li.footer__menu__item 
+            a.footer__menu__link(href="#") Ценовая политика
+          li.footer__menu__item 
+            a.footer__menu__link(href="#") Партнеры
+          li.footer__menu__item 
+            a.footer__menu__link(href="#") Новости
+          li.footer__menu__item 
+            a.footer__menu__link(href="#") Доставка и оплата
+          li.footer__menu__item 
+            a.footer__menu__link(href="#") Гарантия
+          li.footer__menu__item 
+            a.footer__menu__link(href="#") Контакты
+        div.footer__contacts
+          span.footer__contacts__phone +7(3852)77-94-83
+          a.footer__contacts__mail(href="mailto:azpi22@bk.ru") azpi@bk.ru
+        div.footer__address
+          span 656023, РОССИЯ,<br> Алтайский край, г. Барнаул,<br> пр. Космонавтов, 6/2, офис 2      
+      div.copyright
+        div.container
+          span.copyright__azpi 2018 © АЗПИ маркет. Все права защищены.
+          span.copyright__letsrock Разработка сайта -&nbsp;&nbsp;    
+                a(href='http://letsrock.pro')
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
     script(src="js/script.js")              
