@@ -52,6 +52,7 @@ html(lang='ru')
               span.photo__text Прямые поставки <br> форсуноки распылителей <br> напрямую с завода
               a(href="#").photo__more-detailed Подробнее
             img(src="img/banner.png")
+<<<<<<< HEAD
     section.news
       div.container
         div.news__title-block
@@ -70,6 +71,7 @@ html(lang='ru')
 
 
 
+=======
     footer.footer
       div.container.footer__inner
         div.footer__logo.info__logo
@@ -101,5 +103,6 @@ html(lang='ru')
           span.copyright__azpi 2018 © АЗПИ маркет. Все права защищены.
           span.copyright__letsrock Разработка сайта -&nbsp;&nbsp;    
                 a(href='http://letsrock.pro')
+>>>>>>> 67e478cae2e6cbe041a1ef5610d767295d3502db
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
     script(src="js/script.js")              
