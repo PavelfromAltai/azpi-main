@@ -51,5 +51,23 @@ html(lang='ru')
               span.photo__text Прямые поставки <br> форсуноки распылителей <br> напрямую с завода
               a(href="#").photo__more-detailed Подробнее
             img(src="img/banner.png")
+    section.news
+      div.container
+        div.news__title-block
+          span.news__title-shadow Новости
+          h2.news__title Новости
+          div.news__title-line
+        div.news__list
+          - for(var x = 0; x < 6; x++)
+            a(href="#").news__item
+              div.news__item__date
+                span.news__item__date-day 14
+                span.news__item__date-month апреля 2018
+              span.news__item__text Повышение цен на продукцию АЗПИ с 1 июня 2018 года
+              div.news__item__arrow
+
+
+
+
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
     script(src="js/script.js")              
