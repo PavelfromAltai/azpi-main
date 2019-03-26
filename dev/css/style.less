@@ -15,15 +15,26 @@ a {
 	text-decoration: none;
 	color: white;
 }
+
+.btn{
+	width: 162px;
+	border: none;
+	outline: none;
+	background-color: #EF2D56;
+	color: white;
+	font-size: 16px;
+	font-family: @font-family-montserrat;
+	font-weight: bold;
+}
 .header {
   position: relative;
+	height: 640px;
   background-color: @dark-blue;
-  height: 640px;
   color: white;
 	&__registration{
 	  position: relative;
+		padding: 10px;
 	  background-color: @light-green;
-	  padding: 10px;
 		font-family: @font-family-roboto;
 		font-size: 14px;
 		&__enter{
@@ -31,11 +42,11 @@ a {
 			margin-right: 38px;
 			&::before {
 					content: '';
-					background: url(../img/enter.svg) center center no-repeat;
 					position: absolute;
+					left:0;
 					width: 17px;
 					height: 17px;
-					left:0
+					background: url(../img/enter.svg) center center no-repeat;
 					}
 		}
 		&__price-list {
@@ -45,11 +56,11 @@ a {
 			text-decoration: none;
 			&::before {
 					content: '';
-					background: url(../img/price_list.svg) center center no-repeat;
 					position: absolute;
+					left:0;
 					width: 16px;
 					height: 16px;
-					left:0
+					background: url(../img/price_list.svg) center center no-repeat;
 					}
 		}
 	}
@@ -60,15 +71,15 @@ a {
 .container {
   position: relative;
   width: 1170px;
-  margin: 0 auto;
   height: 100%;
+	margin: 0 auto;
 }
 .info {
   position: relative;
-  overflow: hidden;
-  height: 105px;
-	font-family: @font-family-roboto;
+	height: 105px;
 	border-bottom: 1px solid rgba(229, 229, 229, 0.1);
+  overflow: hidden;
+	font-family: @font-family-roboto;
   div {
     position: relative;
     float: left;
@@ -88,38 +99,38 @@ a {
     margin-right: 31px;
     .contacts__phone{
       display: block;
-      font-size: 24px;
 			padding-left: 26px;
 			margin-bottom: 11px;
+      font-size: 24px;
 			&::before {
 					content: '';
-					background: url(../img/phone.png) center center no-repeat;
 					position: absolute;
 					width: 16px;
 					height: 16px;
-					left:0
+					left:0;
+					background: url(../img/phone.png) center center no-repeat;
 					}
     }
 		.contacts__mail{
-			color: white;
-			text-decoration: none;
-			border-bottom: 1px solid #11A9B7;
 			padding-left: 24px;
 			padding-bottom: 2px;
+			border-bottom: 1px solid #11A9B7;
+			text-decoration: none;
+			color: white;
 			&::before {
 					content: '';
-					background: url(../img/envelope.png) center center no-repeat;
 					position: absolute;
+					left:0;
 					width: 14px;
 					height: 14px;
-					left:0
+					background: url(../img/envelope.png) center center no-repeat;
 					}
 		}
   }
   &__search {
-    margin-right: 21px;
 		width: 236px;
 		height: 100%;
+		margin-right: 21px;
 		margin-top: 35px !important;
 		&__form{
 			height: 40px;
@@ -133,32 +144,32 @@ a {
 			border-radius: 4px;
 			border-width: 0;
 			&::placeholder{
-				font-size: 15px;
-				font-family: @font-family-roboto;
 				padding-left: 17px;
 				padding-top: 11px;
+				font-size: 15px;
+				font-family: @font-family-roboto;
 				color: white;
 			}
 		}
 		&__submit {
-			width: 38px;
-			height: 33px;
-			background: url(../img/search_btn.svg) center center no-repeat;
 			position: absolute;
-			border: 0;
 			top: 3px;
 			right: 3px;
+			width: 38px;
+			height: 33px;
+			border: 0;
+			background: url(../img/search_btn.svg) center center no-repeat;
 			/*left:0*/
 		}
   }
   &__basket {
-    margin-top: 0 !important;
+		box-sizing: border-box;
     width: 220px;
     height: 73px;
+		margin-top: 0 !important;
+		padding-top: 24px;
     border: 2px solid rgba(255, 255, 255, 0.2);
 		font-size: 14px;
-		padding-top: 24px;
-    box-sizing: border-box;
 		&__img{
 			vertical-align: middle;
 			margin-left: 12px;
@@ -169,10 +180,10 @@ a {
 
 .menu {
   position: relative;
+	margin: 30px 78px;
 	font-family: @font-family-montserrat;
 	font-weight: 600;
 	font-size: 15px;
-	margin: 30px 78px;
   &__list {
     overflow: hidden;
   }
@@ -200,9 +211,9 @@ a {
 		position: absolute;
     width: 610px;
     height: 315px;
-    background: rgba(0, 0, 0, 0.8);
     left: -25px;
 		top: 50px;
+		background: rgba(0, 0, 0, 0.8);
 	}
 	&__text{
 		display: block;
@@ -214,17 +225,17 @@ a {
 	&__more-detailed{
 		display: block;
 		position: absolute;
-		bottom: 40px;
 		left: 50px;
+		bottom: 40px;
     box-sizing: border-box;
     width: 162px;
+		padding: 10px 30px;
 		font-family: @font-family-montserrat;
 		font-weight: bold;
 		font-size: 16px;
 		background: #EF2D56;
 		box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
 		border-radius: 4px;
-		padding: 10px 30px;
 		color: white;
 		text-decoration: none;
 	}
@@ -232,6 +243,104 @@ a {
     bottom:0
   }
 }
+/*catalog*/
+.catalog {
+	position: relative;
+	width: 100%;
+	font-family: @font-family-montserrat;
+	background: #E5E5E5;
+	&__title-block{
+		position: relative;
+		display: inline-block;
+		margin-top: 94px;
+	}
+	&__title-shadow{
+		position: absolute;
+		top: -47px;
+		font-size: 72px;
+		font-weight: bold;
+		color: rgba(10, 63, 90, 0.1);
+	}
+	&__title {
+		padding-left: 21px;
+		font-size: 35px;
+		color: #0A3F5A;
+	}
+	&__title-line{
+		width: 80px;
+		height: 4px;
+		margin-top: 44px;
+		margin-bottom: 39px;
+		margin-left: 21px;
+		background-color: #0A3F5A;
+		color:#424242;
+		&-text{
+			position: absolute;
+			right: -365px;
+			bottom: 30px;
+			font-size: 15px;
+			line-height: 25px;
+			font-family: @font-family-roboto;
+		}
+	}
+
+	&__items{
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+	}
+	&__item{
+		display: block;
+		float: left;
+		width: 274px;
+		height: 305px;
+		border: 3px solid #11A9B7;
+		padding-top: 12px;
+		padding-left: 12px;
+		padding-right: 12px;
+		background-color: white;
+		margin-right: 24px;
+		box-sizing: border-box;
+
+		&-title{
+			display: block;
+			box-sizing: border-box;
+			height: 76px;
+			padding-top: 14px;
+			padding-bottom: 21px;
+			line-height: 26px;
+			font-size: 18px;
+			text-align: center;
+			color: #2D2D2D;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__buttons {
+		position: relative;
+		padding-top: 58px;
+		padding-bottom: 51px;
+		text-align: center;
+
+		button{
+				padding-top: 13px;
+				padding-bottom: 13px;
+				font-size: 16px;
+		}
+		.btn__new{
+				margin-right: 25px;
+		}
+	}
+	&__line{
+		position: absolute;
+		top: -17px;
+		right: 0;
+		width: 1920px;
+		height: 9px;
+		background: #11A9B7;
+	}
+}/*catalog*/
 /*news*/
 .news {
 	position: relative;
@@ -239,15 +348,16 @@ a {
 	color: white;
 	width: 100%;
 	&__title-shadow{
-		font-size: 72px;
-		color: rgba(255, 255, 255, 0.1);
 		position: absolute;
 		top: -47px;
+		font-size: 72px;
+		font-weight: bold;
+		color: rgba(255, 255, 255, 0.1);
 	}
 	&__title-block{
+		display: inline-block;
 		position: relative;
 		margin-top: 94px;
-		display: inline-block;
 	}
 	&__title {
 		font-size: 35px;
@@ -256,19 +366,19 @@ a {
 	&__title-line{
 		width: 80px;
 		height: 4px;
-		background-color: white;
 		margin-top: 44px;
 		margin-bottom: 39px;
 		margin-left: 21px;
+		background-color: white;
 	}
 	&__item {
 		display: inline-block;
 		position: relative;
-		border: 1px solid #E5E5E5;
 		width: calc(33% - 15px);
 		height:150px;
-		box-sizing: border-box;
 		margin: 7px;
+		border: 1px solid #E5E5E5;
+		box-sizing: border-box;
 		font-family: @font-family-roboto;
 		color: white;
 		text-decoration: none;
@@ -276,21 +386,21 @@ a {
 			display: inline-block;
 			width: 44px;
 			height: 44px;
-			background: url("../img/date.svg");
-			font-size: 20px;
 			padding: 9px 13px 6px 8px;
 			margin: 7px 6px 10px 7px;
+			font-size: 20px;
 			box-sizing: border-box;
+			background: url("../img/date.svg");
 		}
 		&__date-month{
 			font-size: 15px;
 		}
 		&__text{
 			display:inline-block;
-			font-size: 17px;
-			line-height: 24px;
 			margin-left: 29px;
 			margin-right: 29px;
+			line-height: 24px;
+			font-size: 17px;
 		}
 		&:hover{
 			background-color: white;
@@ -298,26 +408,81 @@ a {
 		}
 		&__arrow{
 			position: absolute;
-			background: url("../img/news_arrow.svg") center center no-repeat;
 			width: 15px;
 			height: 12px;
 			bottom: 12px;
 			right: 18px;
+			background: url("../img/news_arrow.svg") center center no-repeat;
 		}
 	}
+	&__buttons {
+		position: relative;
+		padding-top: 58px;
+		padding-bottom: 51px;
+		font-family: @font-family-montserrat;
+		font-weight: bold;
+		text-align: center;
 
+		button{
+				padding-top: 13px;
+				padding-bottom: 13px;
+		}
+	}
+}/*news*/
+
+/*yandex.map*/
+.dealers{
+	position: relative;
+	width: 100%;
+	padding-top: 37px;
+	color: white;
+	background: #0A3F5A;
+	&__title-block{
+		display: inline-block;
+		position: absolute;
+		top: 94px;
+		width: 600px;
+		font-family: @font-family-montserrat;
+		z-index: 1;
+	}
+	&__title-shadow{
+		position: absolute;
+		top: -47px;
+		font-size: 72px;
+		font-weight: bold;
+		color: rgba(255, 255, 255, 0.1);
+	}
+	&__title {
+		font-size: 35px;
+		padding-left: 21px;
+	}
+	&__title-line{
+		width: 80px;
+		height: 4px;
+		margin-top: 44px;
+		margin-bottom: 39px;
+		margin-left: 21px;
+		background-color: white;
+	}
+
+
+
+	&__map{
+		width: 100%;
+		height: 780px;
+	}
 }
 
 .footer{
 	position: relative;
-	background: #292929;
 	color: white;
 	overflow: hidden;
 	font-family: @font-family-roboto;
+	background: #292929;
 	&__inner{
-		overflow: hidden;
 		padding-top: 50px;
 		padding-bottom: 50px;
+		overflow: hidden;
 	}
 
 	&__logo{
@@ -328,16 +493,16 @@ a {
 	&__menu__list{
 		position: relative;
 		float: left;
-		list-style: none;
-		margin-right: 36px;
 		width: 320px;
+		margin-right: 36px;
+		list-style: none;
 	}
 	&__menu__item{
 		position: relative;
+		float: left;
+		width: 50%;
 		font-size: 14px;
 		line-height: 26px;
-		width: 50%;
-		float: left;
 	}
 	&__contacts{
 		position: relative;
@@ -350,24 +515,24 @@ a {
 			margin-bottom: 11px;
 			&::before {
 					content: '';
-					background: url(../img/phone.png) center center no-repeat;
 					position: absolute;
+					left:0;
 					width: 16px;
 					height: 16px;
-					left:0
+					background: url(../img/phone.png) center center no-repeat;
 					}
 		}
 		&__mail{
+					padding-left: 24px;
 					color: white;
 					text-decoration: none;
-					padding-left: 24px;
 					&::before {
 							content: '';
-							background: url(../img/envelope.png) center center no-repeat;
 							position: absolute;
 							width: 14px;
 							height: 14px;
-							left:0
+							left:0;
+							background: url(../img/envelope.png) center center no-repeat;
 							}
 		}
 	}
@@ -379,11 +544,11 @@ a {
 		line-height: 20px;
 		&::before {
 				content: '';
-				background: url(../img/geo.png) center center no-repeat;
 				position: absolute;
+				left:0;
 				width: 11px;
 				height: 17px;
-				left:0
+				background: url(../img/geo.png) center center no-repeat;
 				}
 	}
 .copyright{
@@ -398,10 +563,10 @@ a {
 			float: right;
 			a{
 				 display: block;
-				 background: url(../img/logo-letsrock.svg) center center no-repeat;
+				 float: right;
 				 width: 102px;
 				 height: 22px;
-				 float: right;
+				 background: url(../img/logo-letsrock.svg) center center no-repeat;
 			}
 		}
 }

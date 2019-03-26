@@ -52,6 +52,24 @@ html(lang='ru')
               span.photo__text Прямые поставки <br> форсуноки распылителей <br> напрямую с завода
               a(href="#").photo__more-detailed Подробнее
             img(src="img/banner.png")
+              
+    section.catalog
+      div.container
+        div.catalog__title-block
+          span.catalog__title-shadow Каталог
+          h2.catalog__title Каталог
+          div.catalog__title-line
+            span.catalog__title-line-text Выбирайте более чем из 350 модификаций продукции!
+        div.catalog__items
+          - for(var x = 0; x < 4; x++)
+            a(href="#").catalog__item
+              img(src="img/catalog-item.jpg").catalog__item-image
+              span.catalog__item-title Форсунки
+        div.catalog__buttons
+          div.catalog__line
+          button.btn.btn__new Новинки
+          button.btn.btn__popular Популярное   
+                                          
     section.news
       div.container
         div.news__title-block
@@ -66,10 +84,18 @@ html(lang='ru')
                 span.news__item__date-month апреля 2018
               span.news__item__text Повышение цен на продукцию АЗПИ с 1 июня 2018 года
               div.news__item__arrow
+        div.news__buttons
+            button.btn.btn__all-news Все новости            
+             
 
 
-
-
+    div.dealers
+      div.container
+        div.dealers__title-block
+          span.dealers__title-shadow Карта дилеров
+          h2.dealers__title Карта дилеров
+          div.dealers__title-line
+      div.dealers__map(id="map")
     footer.footer
       div.container.footer__inner
         div.footer__logo.info__logo
@@ -101,5 +127,7 @@ html(lang='ru')
           span.copyright__azpi 2018 © АЗПИ маркет. Все права защищены.
           span.copyright__letsrock Разработка сайта -&nbsp;&nbsp;    
                 a(href='http://letsrock.pro')
+
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU",type="text/javascript")
     script(src="js/script.js")              
