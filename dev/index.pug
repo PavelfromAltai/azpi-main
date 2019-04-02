@@ -20,15 +20,17 @@ html(lang='ru')
               span Отправляем по всей россии<br> любой транспортной<br> компанией
               img(src="img/delivery-car.svg")
             div.contacts.info__contacts
-              a.contacts__phone(href="tel:73852779483") +7(3852)77-94-83
+              a.contacts__phone(href="tel:73852779483") 
+                span.contacts__phone-number +7(3852)77-94-83
               a.contacts__mail(href="mailto:azpi22@bk.ru") azpi@bk.ru
             div.info__search
               form.info__search__form
                 input.info__search__text(type="text",placeholder="Поиск по артикулу")
                 input.info__search__submit(type="submit",value="")
             div.info__basket
-              img.info__basket__img(src="img/cart.svg")
-              span.info__basket__text В корзине 50 товаров
+              a.info__basket-link
+                img.info__basket__img(src="img/cart.svg")
+                span.info__basket__text В корзине 50 товаров
           nav.menu
             ul.menu__list
               li.menu__item
@@ -59,7 +61,7 @@ html(lang='ru')
           span.catalog__title-shadow Каталог
           h2.catalog__title Каталог
           div.catalog__title-line
-            span.catalog__title-line-text Выбирайте более чем из 350 модификаций продукции!
+          div.catalog__title-line-text Выбирайте более чем из 350 модификаций продукции!
         div.catalog__items
           - for(var x = 0; x < 4; x++)
             a(href="#").catalog__item
